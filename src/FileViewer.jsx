@@ -27,7 +27,7 @@ const FileViewer = ({ fileUrl, fileType, style, className, fallbackText }) => {
 
   const mimeType = getMimeType(fileType);
 
-  console.log(mimeType);
+  // console.log(mimeType);
 
   const getIframeLink  = useCallback(() => {
     return `https://docs.google.com/viewer?embedded=true&url=${encodeURIComponent(fileUrl)}`;
@@ -108,7 +108,7 @@ const FileViewer = ({ fileUrl, fileType, style, className, fallbackText }) => {
         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ||
       mimeType === "application/msword"
     ) {
-      console.log("inside dox");
+      // console.log("inside dox");
 
       // const officeUrl = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(
       //     fileUrl
